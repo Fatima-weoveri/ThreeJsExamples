@@ -1,0 +1,17 @@
+.container {
+    height: 200vh; /* Ensure there's enough height for scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+.sun {
+    margin-top: 400px;
+    width: 400px;
+    height: 400px;
+    background-color: yellow; /* Base color */
+    background-image: radial-gradient(circle at 50% 50%, yellow, gold); /* Initial gradient */
+    border-radius: 100%;
+    transition: background-image 0.3s ease; /* Smooth transition for the background image */
+}

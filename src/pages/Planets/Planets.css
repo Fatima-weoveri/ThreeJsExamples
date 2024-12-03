@@ -1,0 +1,105 @@
+.intro {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #000;
+}
+.sectionOne {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg img{
+    width: 100vw;
+    filter: brightness(0.6);
+}
+
+.text{
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  text-align: center;
+}
+
+.text h1 {
+    font-size: 5vw;
+    color: #fff;
+    letter-spacing: 20px;
+}
+
+.rock {
+    position: absolute;
+    top: 10vh;
+    left: 40vh;
+}
+
+.rock img {
+    width: 50%;
+    filter: brightness(0.5);
+}
+
+.earth {
+    position: absolute;
+    top: 15vh;
+    justify-content: center;
+    display: flex;  
+    z-index: 1;
+}
+
+.earth img {
+    width: 25%;
+    filter: brightness(0.7);
+}
+
+.mid {
+    position: absolute;
+    z-index: 2;
+    top: 15vh;
+}
+
+.mid img{
+    width: 100%;
+    filter: brightness(0.8);
+}
+
+.expanding-circle {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background:  #1D3956;
+  border-radius: 50%;
+  z-index: 1000;  
+  transition: transform 0.5s ease-out;
+}
+
+.circle-text {
+  color: white;
+  font-size: 1.5rem; 
+  text-align: center;
+  margin-top: 250px;
+}
+
+.cards {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 100px;
+    background-color: #2D5986;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    opacity: 0; /* Start hidden */
+    transition: all 0.5s ease-out;
+    text-align: center;
+}

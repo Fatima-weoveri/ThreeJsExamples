@@ -1,0 +1,93 @@
+  // body {
+  //   background-color: var(--blue);
+  //   color: #fff;
+  //   font-family: 'TT Firs Neue', -apple-system, Arial, sans-serif;
+  //   font-weight: 300;
+  //   letter-spacing: -1px;
+  //   line-height: 1.5;
+  //   margin: 0;
+  // }
+
+  
+  a {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
+  section {
+    height: 100vh;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .hero__title {
+    text-align: center;
+    line-height: 8em;
+    max-width: 976px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 158px;
+    line-height: 8rem;
+    letter-spacing: -0.02em;
+    mix-blend-mode: lighten;
+  }
+  .sun1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sun__circle {
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: linear-gradient(
+      180deg,
+      #f47731 0%,
+      rgba(244, 119, 49, 0.35) 100%
+    );
+    mix-blend-mode: lighten;
+  }
+  .lyrics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    mix-blend-mode: lighten;
+    h1 {
+      margin-bottom: 4rem;
+    }
+    p {
+      display: block;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 100%;
+      text-align: center;
+      color: #fff;
+      width: 60%;
+    }
+  }
+  
+  .lyrics__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: lighten;
+  }
+  .full-screen-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.background-container {
+    background-size: cover; /* Ensures background covers the area */
+    transform: scale(1.1); /* Scale up the background */
+    background-position: center;
+}

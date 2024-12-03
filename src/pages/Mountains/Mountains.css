@@ -1,0 +1,214 @@
+.mountainPage {
+    background-color: #003D4F;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.main img#man {
+    transform-origin: bottom;
+}
+.mountainsText {
+    position: relative;
+    color: white;
+    font-size: 7vw;
+    font-weight: bold;
+}
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #003D4F, transparent);
+    z-index: 10000;
+}
+.section1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003D4F;
+    flex-direction: column;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    overflow-x: hidden;
+}
+.options {
+    background-color: #06627B;
+    border-radius: 20px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.optionsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#upperWrap, #lowerWrap {
+    overflow: hidden;
+    height: 45px;
+    line-height: 0px;
+    width: 300px;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+}
+#upperWrap h3, #lowerWrap h3 {
+    color: white;
+}
+#upper1, #upper2 {
+    font-size: 24px;
+    text-transform: uppercase
+}
+#line1, #line2 {
+    width: 300px;
+    height: 2px;
+    background: white;
+}
+.description {
+    display: flex;
+}
+.img_container {
+    width: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mask img {
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+    object-fit: cover;
+}
+.mask {
+    visibility: hidden;
+    position: relative;
+    width: 80%;
+    /* height: 80%; */
+    overflow: hidden;
+    margin: 40px;
+}
+.text_container {
+    width: 50%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text_container p {
+    margin: 40px;
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    background-color: #003D4F;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.quoteText {
+    font-size: 6vw;
+    margin: 0;
+    width: 100%;
+    color: rgb(182, 182, 182, 0.2);
+    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+    background-clip: text;
+    text-transform: uppercase;
+    line-height: 100px;
+    font-weight: bold;
+    letter-spacing: -.01em;
+    line-height: 130px;
+    -webkit-background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+    border-bottom: 1px solid #2F2B28;
+    position: relative;
+    text-align: center;
+  }
+
+  .section3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #003D4F; */
+    flex-direction: column;
+    height: 300vh;
+}
+
+.section4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003D4F;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .description {
+        flex-direction: column;
+    }
+    .img_container, .text_container {
+        width: 100%;
+    }
+    .text_container p {
+        margin: 0px 40px 40px 40px;
+    }
+}
+
+
+#parallax_section1, #parallax_section2 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    transform-origin: center center;
+  }
+  
+  #parallax_trigger1 img,   #parallax_trigger2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    object-position: center center;
+    will-change: transform;  
+  }
+  
+  #trigger1, #trigger2{
+    position: relative;
+  }
+
+  #section3 h1{
+    font-size: 5em;
+    text-align: center;
+    color: white;
+  }
